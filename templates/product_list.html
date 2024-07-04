@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block title %}Products{% endblock %}
+{% block content %}
+<center><h2>Product List</h2></center>
+
+<!-- Electronics Category -->
+<h3>Electronics</h3>
+<div class="products">
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/product1.jpg') }}" alt="Smartphone X">
+        <h3>Smartphone X</h3>
+        <p>Latest model with advanced features and sleek design.</p>
+        <p>$699.99</p>
+        <button class="add-to-cart-btn" data-product="Smartphone X" data-price="699.99">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/product2.jpg') }}" alt="Wireless Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>High-quality sound with noise-cancelling capabilities.</p>
+        <p>$149.99</p>
+        <button class="add-to-cart-btn" data-product="Wireless Headphones" data-price="149.99">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/product3.jpg') }}" alt="Smartwatch Series 5">
+        <h3>Smartwatch Series 5</h3>
+        <p>Track your fitness and stay connected on the go.</p>
+        <p>$249.99</p>
+        <button class="add-to-cart-btn" data-product="Smartwatch Series 5" data-price="249.99">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Fashion Category -->
+<h3>Fashion</h3>
+<div class="products">
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/fashion1.jpg') }}" alt="Designer Dress">
+        <h3>Designer Dress</h3>
+        <p>Elegant and stylish dress for any occasion.</p>
+        <p>$299.99</p>
+        <button class="add-to-cart-btn" data-product="Designer Dress" data-price="299.99">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/fashion2.jpg') }}" alt="Leather Jacket">
+        <h3>Leather Jacket</h3>
+        <p>High-quality leather jacket for a trendy look.</p>
+        <p>$199.99</p>
+        <button class="add-to-cart-btn" data-product="Leather Jacket" data-price="199.99">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/fashion3.jpg') }}" alt="Sneakers">
+        <h3>Sneakers</h3>
+        <p>Comfortable and stylish sneakers.</p>
+        <p>$79.99</p>
+        <button class="add-to-cart-btn" data-product="Sneakers" data-price="79.99">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Home & Garden Category -->
+<h3>Home & Garden</h3>
+<div class="products">
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/home2.jpg') }}" alt="Dining Table">
+        <h3>Dining Table</h3>
+        <p>Elegant dining table set.</p>
+        <p>$499.99</p>
+        <button class="add-to-cart-btn" data-product="Dining Table" data-price="499.99">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/home3.jpg') }}" alt="Garden Tools">
+        <h3>Garden Tools</h3>
+        <p>Complete set of garden tools for all your needs.</p>
+        <p>$129.99</p>
+        <button class="add-to-cart-btn" data-product="Garden Tools" data-price="129.99">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/home4.jpg') }}" alt="Lamps">
+        <h3>Lamps</h3>
+        <p>Modern and stylish lamps for your home.</p>
+        <p>$79.99</p>
+        <button class="add-to-cart-btn" data-product="Lamps" data-price="79.99">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Sports Category -->
+<h3>Sports</h3>
+<div class="products">
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/sports1.jpg') }}" alt="Running Shoes">
+        <h3>Running Shoes</h3>
+        <p>High-performance running shoes.</p>
+        <p>$129.99</p>
+        <button class="add-to-cart-btn" data-product="Running Shoes" data-price="129.99">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/sports3.jpg') }}" alt="Tennis Racket">
+        <h3>Tennis Racket</h3>
+        <p>Professional-grade tennis racket.</p>
+        <p>$89.99</p>
+        <button class="add-to-cart-btn" data-product="Tennis Racket" data-price="89.99">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/sports4.jpg') }}" alt="Gym Equipment">
+        <h3>Gym Equipment</h3>
+        <p>Full set of gym equipment for home workouts.</p>
+        <p>$799.99</p>
+        <button class="add-to-cart-btn" data-product="Gym Equipment" data-price="799.99">Add to Cart</button>
+    </div>
+</div>
+
+{% endblock %}
