@@ -72,10 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Update total cart value
                 cartTotalValue.textContent = data.total.toFixed(2);
             })
-            .catch(error => {
-                console.error('Error fetching cart items:', error);
-                alert('Failed to fetch cart items.');
-            });
     }
 
     // Fetch cart items when the page loads
